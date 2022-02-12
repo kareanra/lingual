@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Lingual",
+  "name": "Wordle-inspired language app",
   "icons": [
     {
       "src": "favicon.ico",
