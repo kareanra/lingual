@@ -1,7 +1,7 @@
 import axios from 'axios'
 import QueryString from 'qs'
 
-const sentence = 'This sentence is a lie'
+const sentence = 'I wonder what language this is'
 
 export type Language = {
     language: string
@@ -18,7 +18,7 @@ export const getLanguages = async () => {
 
     const response = await axios.get('https://google-translate1.p.rapidapi.com/language/translate/v2/languages?target=en', { headers: headers})
 
-    return response.data['data']['languages']
+    return response.data['data']['languages'] as Language[]
 }
 
 export const translate = async (language: string) => {
