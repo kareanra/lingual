@@ -1,7 +1,7 @@
 import axios from 'axios'
 import QueryString from 'qs'
 
-const sentence = 'I wonder what language this is'
+const sentence = 'What language is this?'
 
 export type Language = {
     language: string

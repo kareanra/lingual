@@ -1,19 +1,31 @@
-import ReactAudioPlayer from "react-audio-player"
+import { VolumeUp } from "@mui/icons-material";
+import { IconButton } from "@mui/material";
 
 interface AudioClipPlayerProps {
     language: string
-    text: string
-    onAudioPlayerError: () => void
+    onError: () => void
+}
+  
+const AudioClipPlayer = ({ language, onError }: AudioClipPlayerProps) => {
+  const url = `http://s3.amazonaws.com/word-puzzles/${language}.mpga`
+  const audio = new Audio(url)
+
+  const playAudio = async () => {
+    try {
+      await audio.play()
+    } catch (err) {
+      console.log(err)
+    }
+  }
+
+  return (
+    <IconButton
+      aria-label="play"
+      onClick={() => playAudio()}
+      size="large">
+        <VolumeUp />
+    </IconButton>
+  )
 }
 
-export const AudioClipPlayer = ({ language, text, onAudioPlayerError }: AudioClipPlayerProps) => {
-    const url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=${language}-${language.toUpperCase()}&client=tw-ob&q=${encodeURIComponent(text)}`
-
-    return (
-        <ReactAudioPlayer
-            src={url}
-            controls
-            onError={() => onAudioPlayerError()}
-        />
-    )
-}
+export default AudioClipPlayer

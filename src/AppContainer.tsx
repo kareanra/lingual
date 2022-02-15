@@ -4,6 +4,7 @@ import { Box } from "@mui/system"
 import JSConfetti from "js-confetti"
 import moment from "moment"
 import { useState } from "react"
+import AudioClipPlayer from "./AudioClipPlayer"
 import translationsJson from "./translations.json"
 
 export const AppContainer = () => {
@@ -93,7 +94,7 @@ export const AppContainer = () => {
             <Typography color="textPrimary">
                 Try to guess the language in the fewest possible guesses! In English the sentence is 
             </Typography>
-            <h3><i>I wonder what language this is</i></h3>
+            <h3><i>What language is this?</i></h3>
         </Box>
 
         {sentence ?
@@ -102,6 +103,9 @@ export const AppContainer = () => {
                     Translated (by Google) into the mystery language, the sentence is:
                 </Typography>
                 <h2>{sentence}</h2>
+                {audioPlayerShowing &&
+                    <AudioClipPlayer language={answer} onError={() => setAudioPlayerShowing(false)} />
+                }
                 {solved ? <h2>{answerName}</h2> : 
                     <FormGroup row>
                         <TextField 
@@ -125,13 +129,6 @@ export const AppContainer = () => {
                         />
                     </FormGroup>
                 }
-                <br/>
-                {/* <FormGroup row>
-                    {audioPlayerShowing &&
-                        <AudioClipPlayer language={answer} text={sentence} onAudioPlayerError={() => setAudioPlayerShowing(false)} />
-                    }
-                </FormGroup> */}
-                <br/>
             </Paper>
         :
             <Paper>
