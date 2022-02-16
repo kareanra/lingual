@@ -15,6 +15,7 @@ const AudioClipPlayer = ({ language, onError }: AudioClipPlayerProps) => {
       await audio.play()
     } catch (err) {
       console.log(err)
+      onError()
     }
   }
 

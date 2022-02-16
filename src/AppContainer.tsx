@@ -1,14 +1,20 @@
 import { Cancel, CheckCircle, QuestionMark } from "@mui/icons-material"
-import { Alert, Button, FormGroup, InputAdornment, List, ListItem, ListItemIcon, ListItemText, Paper, Snackbar, TextField, Typography } from "@mui/material"
-import { Box } from "@mui/system"
+import { Alert, Button, FormGroup, Grid, InputAdornment, List, ListItem, ListItemIcon, ListItemText, Snackbar, TextField, Typography } from "@mui/material"
 import JSConfetti from "js-confetti"
 import moment from "moment"
 import { useState } from "react"
 import AudioClipPlayer from "./AudioClipPlayer"
 import translationsJson from "./translations.json"
+import similarityJson from "./lexical-similarity-data-sw.json"
+import { SimilarityIndicator } from "./SimilarityIndicator"
+
+type Guess = {
+    languageName: string
+    rank?: number
+}
 
 export const AppContainer = () => {
-    const [guesses, setGuesses] = useState<string[]>([])
+    const [guesses, setGuesses] = useState<Guess[]>([])
     const [currentGuess, setCurrentGuess] = useState<string>('')
     const [solved, setSolved] = useState(false)
     const [error, setError] = useState<string>()
@@ -30,9 +36,11 @@ export const AppContainer = () => {
     })
     languages.sort((l1, l2) => l1.name.localeCompare(l2.name))
 
-    const filteredLanguages = languages.filter(l => 
-        guesses.find(g => l.name.toLowerCase() === g) === undefined && (!currentGuess || l.name.toLowerCase().startsWith(currentGuess))
-    )
+    const filteredLanguages = languages.filter(l => {
+        let notYetGuessed = guesses.find(g => l.name.toLowerCase() === g.languageName.toLowerCase()) === undefined
+        let currentGuessMatches = !currentGuess || l.name.toLowerCase().startsWith(currentGuess.toLowerCase())
+        return notYetGuessed && currentGuessMatches
+    })
 
     const languageNames = translationsJson.map(str => str['language']['name'])
 
@@ -41,128 +49,158 @@ export const AppContainer = () => {
         jsConfetti.addConfetti()
     }
 
-    const handleSubmit = () => {
-        let guessInLower = currentGuess.toLowerCase()
+    const handleSubmit = (guess: string) => {
+        let guessInLower = guess.toLowerCase()
         if (filteredLanguages.length === 1) {
             guessInLower = filteredLanguages[0].name.toLowerCase()
         }
 
-        if (guesses.find(ln => ln === guessInLower) !== undefined) {
-            setError(`You already guessed ${currentGuess}!`)
+        if (guesses.find(ln => ln.languageName.toLowerCase() === guessInLower) !== undefined) {
+            setError(`You already guessed ${guess}!`)
             setCurrentGuess('')
         } else if (guessInLower.toLowerCase() === answerName.toLowerCase()) {
-            setGuesses(guesses.concat(guessInLower))
+            setGuesses(guesses.concat({
+                languageName: answerName,
+                rank: undefined,
+            }))
             setSolved(true)
         } else if (languageNames.find(ln => ln.toLowerCase() === guessInLower) === undefined) {
-            setError(`${currentGuess} is not in the list of languages!`)
+            setError(`${guess} is not in the list of languages!`)
             setCurrentGuess('')
         } else {
             // incorrect guess
+            let newGuess = {
+                languageName: guessInLower,
+                rank: similarityJson.find(row => row.l1 === answerName && row.l2.toLowerCase() === guessInLower)?.value,
+            }
             setError(`Guess again!`)
-            setGuesses(guesses.concat(guessInLower))
+            setGuesses(guesses.concat(newGuess))
             setCurrentGuess('')
         }
+    }
+
+    const handleClick = (language: string) => {
+        handleSubmit(language)
     }
 
     const handleKeyPress = (e: any) => {
         if (e.key === 'Enter' && currentGuess !== '') {
-            handleSubmit()
+            handleSubmit(currentGuess)
         }
     }
 
     // TODO: typeahead?
-    return <>
-        <h2>
-            Lingual
-        </h2>
-        <h4>
-            (I'm a backend engineer, in case you couldn't tell)
-        </h4>
-
-        <Snackbar
-            anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
-            open={error !== undefined}
-            autoHideDuration={1000}
-            onClose={() => setError(undefined)}
+    return (
+        <Grid 
+            container 
+            spacing={0} 
+            direction="column" 
+            alignItems="center" 
+            justifyContent="center"
         >
-            <Alert onClose={() => setError(undefined)} severity="error">
-            {error}
-            </Alert>
-        </Snackbar>
+            <h2>
+                Lingual
+            </h2>
+            <h4>
+                (I'm a backend engineer, in case you couldn't tell)
+            </h4>
 
-        <Box>
-            <Typography color="textPrimary">
-                Try to guess the language in the fewest possible guesses! In English the sentence is 
-            </Typography>
-            <h3><i>What language is this?</i></h3>
-        </Box>
+            <Snackbar
+                anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+                open={error !== undefined}
+                autoHideDuration={1000}
+                onClose={() => setError(undefined)}
+            >
+                <Alert onClose={() => setError(undefined)} severity="error">
+                {error}
+                </Alert>
+            </Snackbar>
 
-        {sentence ?
-            <Paper>
+            <Grid item xs={6}>
                 <Typography color="textPrimary">
-                    Translated (by Google) into the mystery language, the sentence is:
+                    Try to guess the language in the fewest possible guesses! In English the sentence is 
                 </Typography>
-                <h2>{sentence}</h2>
-                {audioPlayerShowing &&
-                    <AudioClipPlayer language={answer} onError={() => setAudioPlayerShowing(false)} />
-                }
-                {solved ? <h2>{answerName}</h2> : 
-                    <FormGroup row>
-                        <TextField 
-                            value={currentGuess} 
-                            onChange={event => setCurrentGuess(event.target.value)} 
-                            autoFocus 
-                            onKeyPress={e => handleKeyPress(e)} 
-                            InputProps={
-                                {
-                                    endAdornment: (
-                                        <InputAdornment position="end">
-                                            <Button 
-                                                variant="contained" 
-                                                onClick={() => handleSubmit()} disabled={currentGuess === ''} 
-                                                disableElevation
-                                            >Guess</Button>
-                                        </InputAdornment>
-                                    )
-                                }
-                            }
-                        />
-                    </FormGroup>
-                }
-            </Paper>
-        :
-            <Paper>
-                <Typography color="textSecondary">
-                    Loading translation...
-                </Typography>
-            </Paper>
-        }
-        {languages &&
-            <List>
-                {guesses.map((guess, i) => {
-                    const language = languages.find(l => l.name.toLowerCase() === guess)!
-                    const isCorrect = solved && answerName.toLowerCase() === guess
+                <h3>What language is this?</h3>
+            </Grid>
 
-                    return (
-                        <ListItem key={`guess-${i}`}>
-                            <ListItemIcon>
-                                {isCorrect ? <CheckCircle color="success" /> : <Cancel color="error" />}
-                            </ListItemIcon>
-                            <ListItemText primary={language.name} />
-                        </ListItem>
-                    )
-                })}
-                {filteredLanguages.map((language, i) => {
-                    return (
-                        <ListItem key={`language-${i}`}>
-                            <ListItemIcon>
-                                <QuestionMark />
-                            </ListItemIcon>
-                            <ListItemText primary={language.name} />
-                        </ListItem>
-                    )
-                })}
-            </List>
-        }
-    </>
+            {sentence &&
+                <Grid item xs={6}>
+                    <Typography color="textPrimary">
+                        Translated (by Google) into the mystery language, the sentence is
+                    </Typography>
+                    <h2>{sentence}</h2>
+                    {audioPlayerShowing ?
+                        <AudioClipPlayer language={answer} onError={() => {
+                            setError('Audio unavailable for this language')
+                            setAudioPlayerShowing(false)
+                        }} />
+                        :
+                        <strong>Audio unavailable</strong>
+                    }
+                    {solved ? <h2>{answerName}</h2> : 
+                        <FormGroup>
+                            <TextField 
+                                value={currentGuess} 
+                                onChange={event => setCurrentGuess(event.target.value)} 
+                                autoFocus 
+                                onKeyPress={e => handleKeyPress(e)} 
+                                autoComplete="off"
+                                InputProps={
+                                    {
+                                        endAdornment: (
+                                            <InputAdornment position="end">
+                                                <Button 
+                                                    variant="contained" 
+                                                    onClick={() => handleSubmit(currentGuess)} disabled={currentGuess === ''} 
+                                                    disableElevation
+                                                >Guess</Button>
+                                            </InputAdornment>
+                                        )
+                                    }
+                                }
+                            />
+                        </FormGroup>
+                    }
+                </Grid>
+            }
+            {languages &&
+            <Grid item>
+                <List>
+                    {guesses.map((guess, i) => {
+                        const language = languages.find(l => l.name.toLowerCase() === guess.languageName.toLowerCase())!
+                        const isCorrect = solved && answerName.toLowerCase() === guess.languageName.toLowerCase()
+
+                        return (
+                            <ListItem 
+                                key={`guess-${i}`} 
+                                style={{ margin: 10, width: 400 }}
+                                secondaryAction={!isCorrect && <SimilarityIndicator rank={guess.rank} />}
+                            >
+                                <ListItemIcon>
+                                    {isCorrect ? <CheckCircle color="success" /> : <Cancel color="error" />}
+                                </ListItemIcon>
+                                <ListItemText primary={language.name} />
+                            </ListItem>
+                        )
+                    })}
+                    {filteredLanguages.map((language, i) => {
+                        return (
+                            <ListItem 
+                                key={`language-${i}`} 
+                                style={{ margin: 10 }}
+                                button 
+                                onClick={() => handleClick(language.name)}
+                            >
+                                <ListItemIcon>
+                                    <QuestionMark />
+                                </ListItemIcon>
+                                <ListItemText primary={language.name} />
+                            </ListItem>
+                        )
+                    })}
+                </List>
+            </Grid>
+            }
+        </Grid>
+    )
 }
