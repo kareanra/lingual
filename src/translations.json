@@ -387,15 +387,29 @@
         "language": {
             "language": "so",
             "name": "Somali",
-            "country": "Somalia"
+            "country": "Somalia",
+            "nativeSpeakers": "16M",
+            "origin": "Afro-Asiatic"
         },
         "translation": "waa maxay luqadda kani?"
     },
     {
         "language": {
+            "language": "bn",
+            "name": "Bengali",
+            "country": "Bangladesh",
+            "nativeSpeakers": "300M",
+            "origin": "Indo-Aryan"
+        },
+        "translation": "এই কি ভাষা?"
+    },
+    {
+        "language": {
             "language": "sr",
             "name": "Serbian",
-            "country": "Serbia"
+            "country": "Serbia",
+            "nativeSpeakers": "12M",
+            "origin": "Indo-European"
         },
         "translation": "који је ово језик?"
     },
@@ -486,14 +500,6 @@
             "country": "Portugal"
         },
         "translation": "Que língua é essa?"
-    },
-    {
-        "language": {
-            "language": "bn",
-            "name": "Bengali",
-            "country": "Bangladesh"
-        },
-        "translation": "এই কি ভাষা?"
     },
     {
         "language": {

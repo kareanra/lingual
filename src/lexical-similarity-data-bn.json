@@ -1,0 +1,352 @@
+[
+    {
+        "l1": "Bengali",
+        "l2": "Bengali",
+        "value": 0.0
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Nepali",
+        "value": 16.04
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Punjabi",
+        "value": 18.74
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Hindi",
+        "value": 22.33
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Urdu",
+        "value": 22.88
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Gujarati",
+        "value": 31.35
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Italian",
+        "value": 52.57
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Romanian",
+        "value": 56.28
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Tajik",
+        "value": 59.81
+    },
+    {
+        "l1": "Bengali",
+        "l2": "French",
+        "value": 59.98
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Catalan",
+        "value": 61.83
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Bulgarian",
+        "value": 62.32
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Latin",
+        "value": 62.61
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Galician",
+        "value": 62.76
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Lithuanian",
+        "value": 63.0
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Serbian",
+        "value": 63.5
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Irish",
+        "value": 64.81
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Pashto",
+        "value": 66.07
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Croatian",
+        "value": 66.27
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Russian",
+        "value": 66.27
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Spanish",
+        "value": 66.8
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Polish",
+        "value": 67.05
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Portuguese",
+        "value": 68.31
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Swedish",
+        "value": 68.42
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Macedonian",
+        "value": 68.42
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Ukrainian",
+        "value": 69.05
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Czech",
+        "value": 69.83
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Welsh",
+        "value": 71.3
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Belarusian",
+        "value": 71.83
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Afrikaans",
+        "value": 72.25
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Danish",
+        "value": 72.53
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Slovak",
+        "value": 72.65
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Dutch",
+        "value": 74.1
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Icelandic",
+        "value": 75.92
+    },
+    {
+        "l1": "Bengali",
+        "l2": "German",
+        "value": 76.85
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Armenian",
+        "value": 77.39
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Latvian",
+        "value": 78.94
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Yiddish",
+        "value": 80.51
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Estonian",
+        "value": 80.97
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Finnish",
+        "value": 80.97
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Kyrgyz",
+        "value": 81.22
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Uzbek",
+        "value": 81.22
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Kazakh",
+        "value": 81.38
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Indonesian",
+        "value": 83.27
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Uyghur",
+        "value": 83.48
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Somali",
+        "value": 84.25
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Georgian",
+        "value": 84.5
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Hungarian",
+        "value": 85.04
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Korean",
+        "value": 85.44
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Tamil",
+        "value": 86.45
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Arabic",
+        "value": 86.73
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Javanese",
+        "value": 87.42
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Hebrew",
+        "value": 87.65
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Maltese",
+        "value": 87.97
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Turkish",
+        "value": 88.62
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Igbo",
+        "value": 88.89
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Japanese",
+        "value": 90.0
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Mongolian",
+        "value": 90.14
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Amharic",
+        "value": 91.93
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Zulu",
+        "value": 92.27
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Swahili",
+        "value": 92.3
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Telugu",
+        "value": 93.33
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Maori",
+        "value": 94.44
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Burmese",
+        "value": 95.25
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Basque",
+        "value": 95.63
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Thai",
+        "value": 96.24
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Lao",
+        "value": 96.24
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Samoan",
+        "value": 97.22
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Vietnamese",
+        "value": 97.46
+    },
+    {
+        "l1": "Bengali",
+        "l2": "Khmer",
+        "value": 100.0
+    }
+]

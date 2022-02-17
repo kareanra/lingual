@@ -1,0 +1,352 @@
+[
+    {
+        "l1": "Serbian",
+        "l2": "Serbian",
+        "value": 0.0
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Croatian",
+        "value": 2.78
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Russian",
+        "value": 2.78
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Ukrainian",
+        "value": 6.19
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Polish",
+        "value": 7.89
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Bulgarian",
+        "value": 8.8
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Czech",
+        "value": 10.07
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Belarusian",
+        "value": 10.22
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Slovak",
+        "value": 10.54
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Macedonian",
+        "value": 11.11
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Italian",
+        "value": 43.07
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Lithuanian",
+        "value": 44.66
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Latvian",
+        "value": 50.7
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Spanish",
+        "value": 51.72
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Galician",
+        "value": 54.25
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Romanian",
+        "value": 55.01
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Catalan",
+        "value": 57.49
+    },
+    {
+        "l1": "Serbian",
+        "l2": "French",
+        "value": 58.18
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Swedish",
+        "value": 59.45
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Nepali",
+        "value": 60.31
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Latin",
+        "value": 60.85
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Portuguese",
+        "value": 61.57
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Bengali",
+        "value": 63.5
+    },
+    {
+        "l1": "Serbian",
+        "l2": "German",
+        "value": 64.47
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Pashto",
+        "value": 64.6
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Dutch",
+        "value": 64.64
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Afrikaans",
+        "value": 64.8
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Danish",
+        "value": 66.24
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Gujarati",
+        "value": 67.31
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Icelandic",
+        "value": 68.88
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Yiddish",
+        "value": 69.33
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Urdu",
+        "value": 69.45
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Punjabi",
+        "value": 70.08
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Irish",
+        "value": 71.7
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Hindi",
+        "value": 72.56
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Tajik",
+        "value": 72.68
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Welsh",
+        "value": 75.48
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Armenian",
+        "value": 77.79
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Hungarian",
+        "value": 84.47
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Somali",
+        "value": 85.31
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Estonian",
+        "value": 85.68
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Igbo",
+        "value": 86.15
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Turkish",
+        "value": 86.16
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Mongolian",
+        "value": 86.23
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Arabic",
+        "value": 86.45
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Amharic",
+        "value": 86.57
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Maori",
+        "value": 87.05
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Korean",
+        "value": 87.25
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Basque",
+        "value": 87.67
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Maltese",
+        "value": 87.72
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Burmese",
+        "value": 88.2
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Uyghur",
+        "value": 88.33
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Finnish",
+        "value": 88.89
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Hebrew",
+        "value": 88.89
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Kyrgyz",
+        "value": 88.98
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Uzbek",
+        "value": 88.98
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Kazakh",
+        "value": 90.74
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Indonesian",
+        "value": 91.18
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Samoan",
+        "value": 91.67
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Thai",
+        "value": 91.69
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Tamil",
+        "value": 91.84
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Zulu",
+        "value": 92.27
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Japanese",
+        "value": 93.33
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Lao",
+        "value": 94.61
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Vietnamese",
+        "value": 95.03
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Swahili",
+        "value": 95.08
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Javanese",
+        "value": 95.37
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Georgian",
+        "value": 96.0
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Telugu",
+        "value": 96.67
+    },
+    {
+        "l1": "Serbian",
+        "l2": "Khmer",
+        "value": 97.08
+    }
+]
