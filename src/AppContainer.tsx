@@ -5,7 +5,6 @@ import { useEffect, useState } from "react"
 import AudioClipPlayer from "./AudioClipPlayer"
 import translationsJson from "./translations.json"
 import similarityJson from "./lexical-similarity-data-so.json"
-import SomaliFlag from "../flags/somalia.png"
 import { Guess, Language } from "./types"
 import { equalIgnoreCase, startsWithIgnoreCase } from "./util/stringUtil"
 import { LanguageList } from "./LanguageList"
@@ -17,19 +16,25 @@ export const AppContainer = () => {
     const [error, setError] = useState<string>()
     const [audioPlayerShowing, setAudioPlayerShowing] = useState(true)
     const [languages, setLanguages] = useState<Language[]>([])
+    const [sortedLanguages, setSortedLanguages] = useState<Language[]>([])
     const [showNativeSpeakers, setShowNativeSpeakers] = useState(false)
     const [showLanguageOrigin, setShowLanguageOrigin] = useState(false)
     const [showFlag, setShowFlag] = useState(false)
 
     useEffect(() => {
         // parse languages
-        setLanguages(translationsJson.map(str => {
+        let languages = translationsJson.map(str => {
             return {
                 code: str.language.language,
                 name: str.language.name,
                 country: str.language.country,
             }
-        }))
+        })
+        let sorted = [...languages] 
+        sorted.sort((l1, l2) => l1.name.localeCompare(l2.name))
+
+        setLanguages(languages)
+        setSortedLanguages(sorted)
     }, [])
 
     useEffect(() => {
@@ -55,7 +60,7 @@ export const AppContainer = () => {
     const answerName = answerWithTranslation['language']['name']
     const sentence = answerWithTranslation['translation']
 
-    const filteredLanguages = languages.filter(l => {
+    const filteredLanguages = sortedLanguages.filter(l => {
         let notYetGuessed = guesses.find(g => equalIgnoreCase(l.name, g.language.name)) === undefined
         let currentGuessMatches = !currentGuess || startsWithIgnoreCase(l.name, currentGuess)
         return notYetGuessed && currentGuessMatches
