@@ -1,0 +1,412 @@
+[
+    {
+        "l1": "Thai",
+        "l2": "Thai",
+        "value": 0.0
+    },
+    {
+        "l1": "Thai",
+        "l2": "Lao",
+        "value": 19.28
+    },
+    {
+        "l1": "Thai",
+        "l2": "Vietnamese",
+        "value": 81.57
+    },
+    {
+        "l1": "Thai",
+        "l2": "Javanese",
+        "value": 82.41
+    },
+    {
+        "l1": "Thai",
+        "l2": "Arabic",
+        "value": 82.97
+    },
+    {
+        "l1": "Thai",
+        "l2": "Maltese",
+        "value": 83.26
+    },
+    {
+        "l1": "Thai",
+        "l2": "Zulu",
+        "value": 84.26
+    },
+    {
+        "l1": "Thai",
+        "l2": "Frisian",
+        "value": 84.74
+    },
+    {
+        "l1": "Thai",
+        "l2": "Yiddish",
+        "value": 84.96
+    },
+    {
+        "l1": "Thai",
+        "l2": "German",
+        "value": 85.62
+    },
+    {
+        "l1": "Thai",
+        "l2": "Samoan",
+        "value": 86.11
+    },
+    {
+        "l1": "Thai",
+        "l2": "Malagasy",
+        "value": 86.11
+    },
+    {
+        "l1": "Thai",
+        "l2": "Tamil",
+        "value": 86.15
+    },
+    {
+        "l1": "Thai",
+        "l2": "Latin",
+        "value": 86.32
+    },
+    {
+        "l1": "Thai",
+        "l2": "Telugu",
+        "value": 86.32
+    },
+    {
+        "l1": "Thai",
+        "l2": "Malayalam",
+        "value": 86.32
+    },
+    {
+        "l1": "Thai",
+        "l2": "Afrikaans",
+        "value": 86.9
+    },
+    {
+        "l1": "Thai",
+        "l2": "Kannada",
+        "value": 87.32
+    },
+    {
+        "l1": "Thai",
+        "l2": "Georgian",
+        "value": 88.13
+    },
+    {
+        "l1": "Thai",
+        "l2": "Slovak",
+        "value": 88.52
+    },
+    {
+        "l1": "Thai",
+        "l2": "Armenian",
+        "value": 89.14
+    },
+    {
+        "l1": "Thai",
+        "l2": "Cebuano",
+        "value": 89.21
+    },
+    {
+        "l1": "Thai",
+        "l2": "Hausa",
+        "value": 89.44
+    },
+    {
+        "l1": "Thai",
+        "l2": "Russian",
+        "value": 89.53
+    },
+    {
+        "l1": "Thai",
+        "l2": "Czech",
+        "value": 89.64
+    },
+    {
+        "l1": "Thai",
+        "l2": "Dutch",
+        "value": 89.82
+    },
+    {
+        "l1": "Thai",
+        "l2": "Polish",
+        "value": 90.26
+    },
+    {
+        "l1": "Thai",
+        "l2": "Icelandic",
+        "value": 90.63
+    },
+    {
+        "l1": "Thai",
+        "l2": "French",
+        "value": 90.74
+    },
+    {
+        "l1": "Thai",
+        "l2": "Catalan",
+        "value": 90.74
+    },
+    {
+        "l1": "Thai",
+        "l2": "Spanish",
+        "value": 90.82
+    },
+    {
+        "l1": "Thai",
+        "l2": "Korean",
+        "value": 90.91
+    },
+    {
+        "l1": "Thai",
+        "l2": "Persian",
+        "value": 90.91
+    },
+    {
+        "l1": "Thai",
+        "l2": "Punjabi",
+        "value": 90.98
+    },
+    {
+        "l1": "Thai",
+        "l2": "Kazakh",
+        "value": 91.09
+    },
+    {
+        "l1": "Thai",
+        "l2": "Indonesian",
+        "value": 91.18
+    },
+    {
+        "l1": "Thai",
+        "l2": "Uyghur",
+        "value": 91.44
+    },
+    {
+        "l1": "Thai",
+        "l2": "Somali",
+        "value": 91.6
+    },
+    {
+        "l1": "Thai",
+        "l2": "Khmer",
+        "value": 91.67
+    },
+    {
+        "l1": "Thai",
+        "l2": "Croatian",
+        "value": 91.69
+    },
+    {
+        "l1": "Thai",
+        "l2": "Serbian",
+        "value": 91.69
+    },
+    {
+        "l1": "Thai",
+        "l2": "Hebrew",
+        "value": 91.78
+    },
+    {
+        "l1": "Thai",
+        "l2": "Hebrew",
+        "value": 91.78
+    },
+    {
+        "l1": "Thai",
+        "l2": "Turkmen",
+        "value": 91.91
+    },
+    {
+        "l1": "Thai",
+        "l2": "Kyrgyz",
+        "value": 91.91
+    },
+    {
+        "l1": "Thai",
+        "l2": "Tatar",
+        "value": 91.91
+    },
+    {
+        "l1": "Thai",
+        "l2": "Uzbek",
+        "value": 91.91
+    },
+    {
+        "l1": "Thai",
+        "l2": "Turkish",
+        "value": 91.93
+    },
+    {
+        "l1": "Thai",
+        "l2": "Belarusian",
+        "value": 92.22
+    },
+    {
+        "l1": "Thai",
+        "l2": "Ukrainian",
+        "value": 92.22
+    },
+    {
+        "l1": "Thai",
+        "l2": "Bulgarian",
+        "value": 92.42
+    },
+    {
+        "l1": "Thai",
+        "l2": "Swahili",
+        "value": 92.59
+    },
+    {
+        "l1": "Thai",
+        "l2": "Gujarati",
+        "value": 92.87
+    },
+    {
+        "l1": "Thai",
+        "l2": "Marathi",
+        "value": 93.38
+    },
+    {
+        "l1": "Thai",
+        "l2": "Galician",
+        "value": 93.52
+    },
+    {
+        "l1": "Thai",
+        "l2": "Portuguese",
+        "value": 93.52
+    },
+    {
+        "l1": "Thai",
+        "l2": "Italian",
+        "value": 93.52
+    },
+    {
+        "l1": "Thai",
+        "l2": "Amharic",
+        "value": 93.59
+    },
+    {
+        "l1": "Thai",
+        "l2": "Hindi",
+        "value": 93.76
+    },
+    {
+        "l1": "Thai",
+        "l2": "Urdu",
+        "value": 93.76
+    },
+    {
+        "l1": "Thai",
+        "l2": "Latvian",
+        "value": 93.83
+    },
+    {
+        "l1": "Thai",
+        "l2": "Tajik",
+        "value": 94.23
+    },
+    {
+        "l1": "Thai",
+        "l2": "Yoruba",
+        "value": 94.44
+    },
+    {
+        "l1": "Thai",
+        "l2": "Maori",
+        "value": 94.44
+    },
+    {
+        "l1": "Thai",
+        "l2": "Mongolian",
+        "value": 95.14
+    },
+    {
+        "l1": "Thai",
+        "l2": "Romanian",
+        "value": 95.37
+    },
+    {
+        "l1": "Thai",
+        "l2": "Lithuanian",
+        "value": 95.37
+    },
+    {
+        "l1": "Thai",
+        "l2": "Danish",
+        "value": 95.63
+    },
+    {
+        "l1": "Thai",
+        "l2": "Swedish",
+        "value": 95.63
+    },
+    {
+        "l1": "Thai",
+        "l2": "Bengali",
+        "value": 96.24
+    },
+    {
+        "l1": "Thai",
+        "l2": "Nepali",
+        "value": 96.54
+    },
+    {
+        "l1": "Thai",
+        "l2": "Japanese",
+        "value": 96.67
+    },
+    {
+        "l1": "Thai",
+        "l2": "Macedonian",
+        "value": 97.08
+    },
+    {
+        "l1": "Thai",
+        "l2": "Finnish",
+        "value": 97.22
+    },
+    {
+        "l1": "Thai",
+        "l2": "Hungarian",
+        "value": 97.22
+    },
+    {
+        "l1": "Thai",
+        "l2": "Welsh",
+        "value": 97.22
+    },
+    {
+        "l1": "Thai",
+        "l2": "Irish",
+        "value": 98.15
+    },
+    {
+        "l1": "Thai",
+        "l2": "Sindhi",
+        "value": 98.32
+    },
+    {
+        "l1": "Thai",
+        "l2": "Estonian",
+        "value": 100.0
+    },
+    {
+        "l1": "Thai",
+        "l2": "Igbo",
+        "value": 100.0
+    },
+    {
+        "l1": "Thai",
+        "l2": "Pashto",
+        "value": 100.0
+    },
+    {
+        "l1": "Thai",
+        "l2": "Basque",
+        "value": 100.0
+    }
+]

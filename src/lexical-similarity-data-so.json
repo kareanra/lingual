@@ -1,0 +1,412 @@
+[
+    {
+        "l1": "Somali",
+        "l2": "Somali",
+        "value": 0.0
+    },
+    {
+        "l1": "Somali",
+        "l2": "Hindi",
+        "value": 76.91
+    },
+    {
+        "l1": "Somali",
+        "l2": "Samoan",
+        "value": 78.87
+    },
+    {
+        "l1": "Somali",
+        "l2": "Korean",
+        "value": 79.96
+    },
+    {
+        "l1": "Somali",
+        "l2": "Urdu",
+        "value": 80.02
+    },
+    {
+        "l1": "Somali",
+        "l2": "Swedish",
+        "value": 80.93
+    },
+    {
+        "l1": "Somali",
+        "l2": "Punjabi",
+        "value": 81.85
+    },
+    {
+        "l1": "Somali",
+        "l2": "Gujarati",
+        "value": 82.09
+    },
+    {
+        "l1": "Somali",
+        "l2": "Hungarian",
+        "value": 82.16
+    },
+    {
+        "l1": "Somali",
+        "l2": "Marathi",
+        "value": 82.46
+    },
+    {
+        "l1": "Somali",
+        "l2": "Mongolian",
+        "value": 82.6
+    },
+    {
+        "l1": "Somali",
+        "l2": "Tajik",
+        "value": 82.72
+    },
+    {
+        "l1": "Somali",
+        "l2": "Sindhi",
+        "value": 82.8
+    },
+    {
+        "l1": "Somali",
+        "l2": "Danish",
+        "value": 83.33
+    },
+    {
+        "l1": "Somali",
+        "l2": "Lao",
+        "value": 83.88
+    },
+    {
+        "l1": "Somali",
+        "l2": "Estonian",
+        "value": 84.24
+    },
+    {
+        "l1": "Somali",
+        "l2": "Finnish",
+        "value": 84.24
+    },
+    {
+        "l1": "Somali",
+        "l2": "Bengali",
+        "value": 84.25
+    },
+    {
+        "l1": "Somali",
+        "l2": "German",
+        "value": 84.32
+    },
+    {
+        "l1": "Somali",
+        "l2": "Amharic",
+        "value": 84.5
+    },
+    {
+        "l1": "Somali",
+        "l2": "Maori",
+        "value": 85.12
+    },
+    {
+        "l1": "Somali",
+        "l2": "Nepali",
+        "value": 85.2
+    },
+    {
+        "l1": "Somali",
+        "l2": "Polish",
+        "value": 85.31
+    },
+    {
+        "l1": "Somali",
+        "l2": "Slovak",
+        "value": 85.31
+    },
+    {
+        "l1": "Somali",
+        "l2": "Bulgarian",
+        "value": 85.31
+    },
+    {
+        "l1": "Somali",
+        "l2": "Serbian",
+        "value": 85.31
+    },
+    {
+        "l1": "Somali",
+        "l2": "Macedonian",
+        "value": 85.31
+    },
+    {
+        "l1": "Somali",
+        "l2": "Russian",
+        "value": 85.31
+    },
+    {
+        "l1": "Somali",
+        "l2": "Persian",
+        "value": 85.49
+    },
+    {
+        "l1": "Somali",
+        "l2": "Belarusian",
+        "value": 85.94
+    },
+    {
+        "l1": "Somali",
+        "l2": "Ukrainian",
+        "value": 85.94
+    },
+    {
+        "l1": "Somali",
+        "l2": "Frisian",
+        "value": 86.11
+    },
+    {
+        "l1": "Somali",
+        "l2": "Welsh",
+        "value": 87.25
+    },
+    {
+        "l1": "Somali",
+        "l2": "Hebrew",
+        "value": 87.35
+    },
+    {
+        "l1": "Somali",
+        "l2": "Hebrew",
+        "value": 87.35
+    },
+    {
+        "l1": "Somali",
+        "l2": "Pashto",
+        "value": 87.38
+    },
+    {
+        "l1": "Somali",
+        "l2": "Irish",
+        "value": 87.4
+    },
+    {
+        "l1": "Somali",
+        "l2": "Cebuano",
+        "value": 87.54
+    },
+    {
+        "l1": "Somali",
+        "l2": "Lithuanian",
+        "value": 87.63
+    },
+    {
+        "l1": "Somali",
+        "l2": "Icelandic",
+        "value": 87.73
+    },
+    {
+        "l1": "Somali",
+        "l2": "Romanian",
+        "value": 88.05
+    },
+    {
+        "l1": "Somali",
+        "l2": "Croatian",
+        "value": 88.09
+    },
+    {
+        "l1": "Somali",
+        "l2": "Czech",
+        "value": 88.09
+    },
+    {
+        "l1": "Somali",
+        "l2": "Turkmen",
+        "value": 88.89
+    },
+    {
+        "l1": "Somali",
+        "l2": "Turkish",
+        "value": 88.89
+    },
+    {
+        "l1": "Somali",
+        "l2": "Uzbek",
+        "value": 88.89
+    },
+    {
+        "l1": "Somali",
+        "l2": "Dutch",
+        "value": 89.26
+    },
+    {
+        "l1": "Somali",
+        "l2": "Swahili",
+        "value": 89.54
+    },
+    {
+        "l1": "Somali",
+        "l2": "Basque",
+        "value": 89.81
+    },
+    {
+        "l1": "Somali",
+        "l2": "Kazakh",
+        "value": 89.93
+    },
+    {
+        "l1": "Somali",
+        "l2": "Yiddish",
+        "value": 90.06
+    },
+    {
+        "l1": "Somali",
+        "l2": "Portuguese",
+        "value": 90.12
+    },
+    {
+        "l1": "Somali",
+        "l2": "Latvian",
+        "value": 90.49
+    },
+    {
+        "l1": "Somali",
+        "l2": "Malagasy",
+        "value": 90.54
+    },
+    {
+        "l1": "Somali",
+        "l2": "Italian",
+        "value": 90.69
+    },
+    {
+        "l1": "Somali",
+        "l2": "Uyghur",
+        "value": 91.18
+    },
+    {
+        "l1": "Somali",
+        "l2": "Thai",
+        "value": 91.6
+    },
+    {
+        "l1": "Somali",
+        "l2": "Hausa",
+        "value": 91.67
+    },
+    {
+        "l1": "Somali",
+        "l2": "Igbo",
+        "value": 91.67
+    },
+    {
+        "l1": "Somali",
+        "l2": "Afrikaans",
+        "value": 91.67
+    },
+    {
+        "l1": "Somali",
+        "l2": "Kyrgyz",
+        "value": 91.67
+    },
+    {
+        "l1": "Somali",
+        "l2": "Tatar",
+        "value": 91.67
+    },
+    {
+        "l1": "Somali",
+        "l2": "Javanese",
+        "value": 91.74
+    },
+    {
+        "l1": "Somali",
+        "l2": "Khmer",
+        "value": 91.77
+    },
+    {
+        "l1": "Somali",
+        "l2": "Indonesian",
+        "value": 92.16
+    },
+    {
+        "l1": "Somali",
+        "l2": "Arabic",
+        "value": 92.28
+    },
+    {
+        "l1": "Somali",
+        "l2": "Spanish",
+        "value": 92.9
+    },
+    {
+        "l1": "Somali",
+        "l2": "Latin",
+        "value": 92.9
+    },
+    {
+        "l1": "Somali",
+        "l2": "Galician",
+        "value": 92.9
+    },
+    {
+        "l1": "Somali",
+        "l2": "French",
+        "value": 92.9
+    },
+    {
+        "l1": "Somali",
+        "l2": "Catalan",
+        "value": 92.9
+    },
+    {
+        "l1": "Somali",
+        "l2": "Vietnamese",
+        "value": 93.92
+    },
+    {
+        "l1": "Somali",
+        "l2": "Japanese",
+        "value": 94.07
+    },
+    {
+        "l1": "Somali",
+        "l2": "Armenian",
+        "value": 94.44
+    },
+    {
+        "l1": "Somali",
+        "l2": "Maltese",
+        "value": 95.06
+    },
+    {
+        "l1": "Somali",
+        "l2": "Yoruba",
+        "value": 95.63
+    },
+    {
+        "l1": "Somali",
+        "l2": "Telugu",
+        "value": 96.67
+    },
+    {
+        "l1": "Somali",
+        "l2": "Kannada",
+        "value": 96.67
+    },
+    {
+        "l1": "Somali",
+        "l2": "Malayalam",
+        "value": 96.67
+    },
+    {
+        "l1": "Somali",
+        "l2": "Tamil",
+        "value": 97.06
+    },
+    {
+        "l1": "Somali",
+        "l2": "Zulu",
+        "value": 97.22
+    },
+    {
+        "l1": "Somali",
+        "l2": "Georgian",
+        "value": 98.15
+    }
+]

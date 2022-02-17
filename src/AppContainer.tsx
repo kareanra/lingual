@@ -1,17 +1,14 @@
-import { Cancel, CheckCircle, QuestionMark } from "@mui/icons-material"
-import { Alert, Button, FormGroup, Grid, InputAdornment, List, ListItem, ListItemIcon, ListItemText, Snackbar, TextField, Typography } from "@mui/material"
+import { Alert, Button, FormGroup, Grid, InputAdornment, Snackbar, TextField, Typography } from "@mui/material"
 import JSConfetti from "js-confetti"
 import moment from "moment"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import AudioClipPlayer from "./AudioClipPlayer"
 import translationsJson from "./translations.json"
-import similarityJson from "./lexical-similarity-data-sw.json"
-import { SimilarityIndicator } from "./SimilarityIndicator"
-
-type Guess = {
-    languageName: string
-    rank?: number
-}
+import similarityJson from "./lexical-similarity-data-so.json"
+import SomaliFlag from "../flags/somalia.png"
+import { Guess, Language } from "./types"
+import { equalIgnoreCase, startsWithIgnoreCase } from "./util/stringUtil"
+import { LanguageList } from "./LanguageList"
 
 export const AppContainer = () => {
     const [guesses, setGuesses] = useState<Guess[]>([])
@@ -19,35 +16,50 @@ export const AppContainer = () => {
     const [solved, setSolved] = useState(false)
     const [error, setError] = useState<string>()
     const [audioPlayerShowing, setAudioPlayerShowing] = useState(true)
+    const [languages, setLanguages] = useState<Language[]>([])
+    const [showNativeSpeakers, setShowNativeSpeakers] = useState(false)
+    const [showLanguageOrigin, setShowLanguageOrigin] = useState(false)
+    const [showFlag, setShowFlag] = useState(false)
+
+    useEffect(() => {
+        // parse languages
+        setLanguages(translationsJson.map(str => {
+            return {
+                code: str.language.language,
+                name: str.language.name,
+                country: str.language.country,
+            }
+        }))
+    }, [])
+
+    useEffect(() => {
+        if (solved) {
+            const jsConfetti = new JSConfetti()
+            jsConfetti.addConfetti()
+        }
+    }, [solved])
+
+    if (!languages.length) {
+        return <>Loading...</>
+    }
 
     const today = moment().dayOfYear()
-    const offset = today % 110
+    const offset = today % languages.length
 
-    const languageWithTranslation = translationsJson[offset]
-    const answer = languageWithTranslation['language']['language']
-    const answerName = languageWithTranslation['language']['name']
-    const sentence = languageWithTranslation['translation']
-
-    const languages = translationsJson.map(str => {
-        return {
-            language: str.language.language,
-            name: str.language.name,
-        }
-    })
-    languages.sort((l1, l2) => l1.name.localeCompare(l2.name))
+    const answerWithTranslation = translationsJson[offset]
+    const answer = {
+        code: answerWithTranslation.language.language,
+        name: answerWithTranslation.language.name,
+        country: answerWithTranslation.language.country,
+    }
+    const answerName = answerWithTranslation['language']['name']
+    const sentence = answerWithTranslation['translation']
 
     const filteredLanguages = languages.filter(l => {
-        let notYetGuessed = guesses.find(g => l.name.toLowerCase() === g.languageName.toLowerCase()) === undefined
-        let currentGuessMatches = !currentGuess || l.name.toLowerCase().startsWith(currentGuess.toLowerCase())
+        let notYetGuessed = guesses.find(g => equalIgnoreCase(l.name, g.language.name)) === undefined
+        let currentGuessMatches = !currentGuess || startsWithIgnoreCase(l.name, currentGuess)
         return notYetGuessed && currentGuessMatches
     })
-
-    const languageNames = translationsJson.map(str => str['language']['name'])
-
-    if (solved) {
-        const jsConfetti = new JSConfetti()
-        jsConfetti.addConfetti()
-    }
 
     const handleSubmit = (guess: string) => {
         let guessInLower = guess.toLowerCase()
@@ -55,27 +67,34 @@ export const AppContainer = () => {
             guessInLower = filteredLanguages[0].name.toLowerCase()
         }
 
-        if (guesses.find(ln => ln.languageName.toLowerCase() === guessInLower) !== undefined) {
+        if (guesses.find(ln => equalIgnoreCase(ln.language.name, guessInLower)) !== undefined) {
             setError(`You already guessed ${guess}!`)
             setCurrentGuess('')
         } else if (guessInLower.toLowerCase() === answerName.toLowerCase()) {
             setGuesses(guesses.concat({
-                languageName: answerName,
-                rank: undefined,
+                language: {
+                    code: answerWithTranslation.language.language,
+                    name: answerWithTranslation.language.name,
+                    country: answerWithTranslation.language.country,
+                },
+                rank: 100,
             }))
             setSolved(true)
-        } else if (languageNames.find(ln => ln.toLowerCase() === guessInLower) === undefined) {
-            setError(`${guess} is not in the list of languages!`)
-            setCurrentGuess('')
         } else {
-            // incorrect guess
-            let newGuess = {
-                languageName: guessInLower,
-                rank: similarityJson.find(row => row.l1 === answerName && row.l2.toLowerCase() === guessInLower)?.value,
+            let guessedLanguage = languages.find(l => equalIgnoreCase(l.name, guessInLower))
+            if (guessedLanguage) {
+                // incorrect guess
+                let newGuess = {
+                    language: guessedLanguage,
+                    rank: similarityJson.find(row => row.l1 === answerName && equalIgnoreCase(row.l2, guessInLower))?.value,
+                }
+                setError(`Guess again!`)
+                setGuesses(guesses.concat(newGuess))
+                setCurrentGuess('')
+            } else {
+                setError(`${guess} is not in the list of languages!`)
+                setCurrentGuess('')
             }
-            setError(`Guess again!`)
-            setGuesses(guesses.concat(newGuess))
-            setCurrentGuess('')
         }
     }
 
@@ -89,7 +108,6 @@ export const AppContainer = () => {
         }
     }
 
-    // TODO: typeahead?
     return (
         <Grid 
             container 
@@ -108,7 +126,7 @@ export const AppContainer = () => {
             <Snackbar
                 anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
                 open={error !== undefined}
-                autoHideDuration={1000}
+                autoHideDuration={2000}
                 onClose={() => setError(undefined)}
             >
                 <Alert onClose={() => setError(undefined)} severity="error">
@@ -130,13 +148,20 @@ export const AppContainer = () => {
                     </Typography>
                     <h2>{sentence}</h2>
                     {audioPlayerShowing ?
-                        <AudioClipPlayer language={answer} onError={() => {
+                        <AudioClipPlayer language={answer.code} onError={() => {
                             setError('Audio unavailable for this language')
                             setAudioPlayerShowing(false)
                         }} />
                         :
                         <strong>Audio unavailable</strong>
                     }
+                    <h4>Number of native speakers:</h4>
+                    {showNativeSpeakers ? <h3>16M</h3> : <Button onClick={() => setShowNativeSpeakers(true)}>Show hint #1</Button>}
+                    <h4>Language origin:</h4>
+                    {showLanguageOrigin ? <h3>Afro-Asiatic</h3> : <Button onClick={() => setShowLanguageOrigin(true)}>Show hint #2</Button>}
+                    <h4>Flag:</h4>
+                    {showFlag ? <img style={{ marginLeft: 10 }} height={50} src="https://word-puzzles.s3.us-east-1.amazonaws.com/flags/somalia.png" /> : <Button onClick={() => setShowFlag(true)}>Show hint #3</Button>}
+                    <br /><br />
                     {solved ? <h2>{answerName}</h2> : 
                         <FormGroup>
                             <TextField 
@@ -164,42 +189,15 @@ export const AppContainer = () => {
                 </Grid>
             }
             {languages &&
-            <Grid item>
-                <List>
-                    {guesses.map((guess, i) => {
-                        const language = languages.find(l => l.name.toLowerCase() === guess.languageName.toLowerCase())!
-                        const isCorrect = solved && answerName.toLowerCase() === guess.languageName.toLowerCase()
-
-                        return (
-                            <ListItem 
-                                key={`guess-${i}`} 
-                                style={{ margin: 10, width: 400 }}
-                                secondaryAction={!isCorrect && <SimilarityIndicator rank={guess.rank} />}
-                            >
-                                <ListItemIcon>
-                                    {isCorrect ? <CheckCircle color="success" /> : <Cancel color="error" />}
-                                </ListItemIcon>
-                                <ListItemText primary={language.name} />
-                            </ListItem>
-                        )
-                    })}
-                    {filteredLanguages.map((language, i) => {
-                        return (
-                            <ListItem 
-                                key={`language-${i}`} 
-                                style={{ margin: 10 }}
-                                button 
-                                onClick={() => handleClick(language.name)}
-                            >
-                                <ListItemIcon>
-                                    <QuestionMark />
-                                </ListItemIcon>
-                                <ListItemText primary={language.name} />
-                            </ListItem>
-                        )
-                    })}
-                </List>
-            </Grid>
+                <Grid item xs={12}>
+                    <LanguageList 
+                        guesses={guesses}
+                        filteredLanguages={filteredLanguages}
+                        solved={solved}
+                        answer={answer}
+                        handleClick={handleClick}
+                    />
+                </Grid>
             }
         </Grid>
     )

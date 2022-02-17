@@ -1,0 +1,412 @@
+[
+    {
+        "l1": "Arabic",
+        "l2": "Arabic",
+        "value": 0.0
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Maltese",
+        "value": 19.67
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Hebrew",
+        "value": 21.06
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Hebrew",
+        "value": 21.06
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Amharic",
+        "value": 54.49
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Urdu",
+        "value": 72.56
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Hindi",
+        "value": 75.81
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Punjabi",
+        "value": 78.59
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Korean",
+        "value": 78.67
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Zulu",
+        "value": 79.39
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Sindhi",
+        "value": 79.89
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Marathi",
+        "value": 79.97
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Malagasy",
+        "value": 80.49
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Catalan",
+        "value": 80.63
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Icelandic",
+        "value": 81.05
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Nepali",
+        "value": 81.29
+    },
+    {
+        "l1": "Arabic",
+        "l2": "German",
+        "value": 81.42
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Spanish",
+        "value": 81.56
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Galician",
+        "value": 81.56
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Portuguese",
+        "value": 81.56
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Gujarati",
+        "value": 82.29
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Swahili",
+        "value": 82.69
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Thai",
+        "value": 82.97
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Hausa",
+        "value": 83.33
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Italian",
+        "value": 83.45
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Frisian",
+        "value": 83.61
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Croatian",
+        "value": 83.68
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Serbian",
+        "value": 83.68
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Macedonian",
+        "value": 83.68
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Ukrainian",
+        "value": 83.68
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Russian",
+        "value": 83.68
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Japanese",
+        "value": 84.07
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Lithuanian",
+        "value": 84.09
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Belarusian",
+        "value": 84.22
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Latin",
+        "value": 84.34
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Romanian",
+        "value": 84.37
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Bulgarian",
+        "value": 84.46
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Afrikaans",
+        "value": 84.7
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Lao",
+        "value": 84.74
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Polish",
+        "value": 84.96
+    },
+    {
+        "l1": "Arabic",
+        "l2": "French",
+        "value": 85.19
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Danish",
+        "value": 85.32
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Swedish",
+        "value": 85.32
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Persian",
+        "value": 85.64
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Latvian",
+        "value": 85.71
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Dutch",
+        "value": 86.44
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Javanese",
+        "value": 86.48
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Tajik",
+        "value": 86.57
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Telugu",
+        "value": 86.67
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Bengali",
+        "value": 86.73
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Igbo",
+        "value": 86.8
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Czech",
+        "value": 87.23
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Yiddish",
+        "value": 87.29
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Khmer",
+        "value": 88.29
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Mongolian",
+        "value": 88.38
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Irish",
+        "value": 88.74
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Vietnamese",
+        "value": 89.55
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Slovak",
+        "value": 89.57
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Somali",
+        "value": 89.6
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Armenian",
+        "value": 89.96
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Kannada",
+        "value": 90.0
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Malayalam",
+        "value": 90.0
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Tamil",
+        "value": 91.18
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Estonian",
+        "value": 91.67
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Yoruba",
+        "value": 91.67
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Finnish",
+        "value": 91.67
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Hungarian",
+        "value": 91.67
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Samoan",
+        "value": 92.07
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Indonesian",
+        "value": 92.16
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Pashto",
+        "value": 92.59
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Cebuano",
+        "value": 93.0
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Georgian",
+        "value": 93.98
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Maori",
+        "value": 94.44
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Welsh",
+        "value": 94.44
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Basque",
+        "value": 95.13
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Kazakh",
+        "value": 97.22
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Turkmen",
+        "value": 97.22
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Kyrgyz",
+        "value": 97.22
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Tatar",
+        "value": 97.22
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Turkish",
+        "value": 97.22
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Uzbek",
+        "value": 97.22
+    },
+    {
+        "l1": "Arabic",
+        "l2": "Uyghur",
+        "value": 98.12
+    }
+]
