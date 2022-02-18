@@ -1,0 +1,352 @@
+[
+    {
+        "l1": "Galician",
+        "l2": "Galician",
+        "value": 0.0
+    },
+    {
+        "l1": "Galician",
+        "l2": "Portuguese",
+        "value": 9.35
+    },
+    {
+        "l1": "Galician",
+        "l2": "Catalan",
+        "value": 10.64
+    },
+    {
+        "l1": "Galician",
+        "l2": "Spanish",
+        "value": 14.9
+    },
+    {
+        "l1": "Galician",
+        "l2": "Italian",
+        "value": 15.95
+    },
+    {
+        "l1": "Galician",
+        "l2": "Latin",
+        "value": 20.75
+    },
+    {
+        "l1": "Galician",
+        "l2": "French",
+        "value": 30.56
+    },
+    {
+        "l1": "Galician",
+        "l2": "Romanian",
+        "value": 43.98
+    },
+    {
+        "l1": "Galician",
+        "l2": "Lithuanian",
+        "value": 52.31
+    },
+    {
+        "l1": "Galician",
+        "l2": "Swedish",
+        "value": 52.62
+    },
+    {
+        "l1": "Galician",
+        "l2": "Serbian",
+        "value": 54.25
+    },
+    {
+        "l1": "Galician",
+        "l2": "Danish",
+        "value": 54.47
+    },
+    {
+        "l1": "Galician",
+        "l2": "Croatian",
+        "value": 57.03
+    },
+    {
+        "l1": "Galician",
+        "l2": "Russian",
+        "value": 57.03
+    },
+    {
+        "l1": "Galician",
+        "l2": "Nepali",
+        "value": 57.4
+    },
+    {
+        "l1": "Galician",
+        "l2": "Irish",
+        "value": 57.45
+    },
+    {
+        "l1": "Galician",
+        "l2": "Ukrainian",
+        "value": 57.66
+    },
+    {
+        "l1": "Galician",
+        "l2": "Polish",
+        "value": 58.02
+    },
+    {
+        "l1": "Galician",
+        "l2": "Welsh",
+        "value": 58.07
+    },
+    {
+        "l1": "Galician",
+        "l2": "Belarusian",
+        "value": 58.38
+    },
+    {
+        "l1": "Galician",
+        "l2": "Bulgarian",
+        "value": 58.88
+    },
+    {
+        "l1": "Galician",
+        "l2": "Slovak",
+        "value": 58.94
+    },
+    {
+        "l1": "Galician",
+        "l2": "Czech",
+        "value": 58.94
+    },
+    {
+        "l1": "Galician",
+        "l2": "Macedonian",
+        "value": 59.8
+    },
+    {
+        "l1": "Galician",
+        "l2": "Gujarati",
+        "value": 61.83
+    },
+    {
+        "l1": "Galician",
+        "l2": "Icelandic",
+        "value": 62.62
+    },
+    {
+        "l1": "Galician",
+        "l2": "Bengali",
+        "value": 62.76
+    },
+    {
+        "l1": "Galician",
+        "l2": "Dutch",
+        "value": 63.59
+    },
+    {
+        "l1": "Galician",
+        "l2": "Hindi",
+        "value": 63.64
+    },
+    {
+        "l1": "Galician",
+        "l2": "Urdu",
+        "value": 63.64
+    },
+    {
+        "l1": "Galician",
+        "l2": "Afrikaans",
+        "value": 63.83
+    },
+    {
+        "l1": "Galician",
+        "l2": "Latvian",
+        "value": 64.61
+    },
+    {
+        "l1": "Galician",
+        "l2": "German",
+        "value": 65.71
+    },
+    {
+        "l1": "Galician",
+        "l2": "Punjabi",
+        "value": 66.83
+    },
+    {
+        "l1": "Galician",
+        "l2": "Tajik",
+        "value": 69.86
+    },
+    {
+        "l1": "Galician",
+        "l2": "Yiddish",
+        "value": 70.17
+    },
+    {
+        "l1": "Galician",
+        "l2": "Pashto",
+        "value": 70.31
+    },
+    {
+        "l1": "Galician",
+        "l2": "Maltese",
+        "value": 77.75
+    },
+    {
+        "l1": "Galician",
+        "l2": "Armenian",
+        "value": 81.54
+    },
+    {
+        "l1": "Galician",
+        "l2": "Arabic",
+        "value": 81.56
+    },
+    {
+        "l1": "Galician",
+        "l2": "Hungarian",
+        "value": 83.33
+    },
+    {
+        "l1": "Galician",
+        "l2": "Hebrew",
+        "value": 84.37
+    },
+    {
+        "l1": "Galician",
+        "l2": "Amharic",
+        "value": 86.23
+    },
+    {
+        "l1": "Galician",
+        "l2": "Mongolian",
+        "value": 86.23
+    },
+    {
+        "l1": "Galician",
+        "l2": "Estonian",
+        "value": 86.6
+    },
+    {
+        "l1": "Galician",
+        "l2": "Indonesian",
+        "value": 87.25
+    },
+    {
+        "l1": "Galician",
+        "l2": "Korean",
+        "value": 87.93
+    },
+    {
+        "l1": "Galician",
+        "l2": "Zulu",
+        "value": 89.61
+    },
+    {
+        "l1": "Galician",
+        "l2": "Finnish",
+        "value": 89.81
+    },
+    {
+        "l1": "Galician",
+        "l2": "Japanese",
+        "value": 90.0
+    },
+    {
+        "l1": "Galician",
+        "l2": "Javanese",
+        "value": 90.74
+    },
+    {
+        "l1": "Galician",
+        "l2": "Kazakh",
+        "value": 91.01
+    },
+    {
+        "l1": "Galician",
+        "l2": "Swahili",
+        "value": 91.52
+    },
+    {
+        "l1": "Galician",
+        "l2": "Turkish",
+        "value": 91.67
+    },
+    {
+        "l1": "Galician",
+        "l2": "Somali",
+        "value": 92.9
+    },
+    {
+        "l1": "Galician",
+        "l2": "Uyghur",
+        "value": 93.14
+    },
+    {
+        "l1": "Galician",
+        "l2": "Samoan",
+        "value": 93.52
+    },
+    {
+        "l1": "Galician",
+        "l2": "Maori",
+        "value": 93.52
+    },
+    {
+        "l1": "Galician",
+        "l2": "Thai",
+        "value": 93.52
+    },
+    {
+        "l1": "Galician",
+        "l2": "Kyrgyz",
+        "value": 93.52
+    },
+    {
+        "l1": "Galician",
+        "l2": "Uzbek",
+        "value": 93.52
+    },
+    {
+        "l1": "Galician",
+        "l2": "Lao",
+        "value": 93.52
+    },
+    {
+        "l1": "Galician",
+        "l2": "Khmer",
+        "value": 94.5
+    },
+    {
+        "l1": "Galician",
+        "l2": "Igbo",
+        "value": 95.37
+    },
+    {
+        "l1": "Galician",
+        "l2": "Vietnamese",
+        "value": 95.94
+    },
+    {
+        "l1": "Galician",
+        "l2": "Tamil",
+        "value": 96.48
+    },
+    {
+        "l1": "Galician",
+        "l2": "Burmese",
+        "value": 97.22
+    },
+    {
+        "l1": "Galician",
+        "l2": "Basque",
+        "value": 97.84
+    },
+    {
+        "l1": "Galician",
+        "l2": "Georgian",
+        "value": 100.0
+    },
+    {
+        "l1": "Galician",
+        "l2": "Telugu",
+        "value": 100.0
+    }
+]

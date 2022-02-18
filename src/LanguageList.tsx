@@ -11,6 +11,7 @@ interface LanguageListProps {
     solved: boolean
     answer: Language
     handleClick: (languageName: string) => void
+    isMobile: boolean
 }
 
 export const LanguageList = ({ 
@@ -19,6 +20,7 @@ export const LanguageList = ({
     solved,
     answer,
     handleClick,
+    isMobile,
 }: LanguageListProps) => {
     return (
         <List>
@@ -28,7 +30,7 @@ export const LanguageList = ({
                 return (
                     <ListItem 
                         key={`guess-${i}`} 
-                        style={{ margin: 10, width: 380 }}
+                        style={{ margin: 10, width: isMobile ? 350 : 400 }}
                         secondaryAction={!isCorrect && <SimilarityIndicator rank={guess.rank} />}
                     >
                         <ListItemIcon>
@@ -38,7 +40,7 @@ export const LanguageList = ({
                     </ListItem>
                 )
             })}
-            {filteredLanguages.map((language, i) => {
+            {!isMobile && filteredLanguages.map((language, i) => {
                 return (
                     <ListItem 
                         key={`language-${i}`} 

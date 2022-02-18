@@ -233,11 +233,11 @@
     },
     {
         "language": {
-            "language": "gl",
-            "name": "Galician",
-            "country": "Spain"
+            "language": "be",
+            "name": "Belarusian",
+            "country": "Belarus"
         },
-        "translation": "que lingua é esta?"
+        "translation": "што гэта за мова?"
     },
     {
         "language": {
@@ -405,6 +405,26 @@
     },
     {
         "language": {
+            "language": "fi",
+            "name": "Finnish",
+            "country": "Finland",
+            "nativeSpeakers": "5.8M",
+            "origin": "Proto-Uralic"
+        },
+        "translation": "mikä kieli Tämä on?"
+    },
+    {
+        "language": {
+            "language": "gl",
+            "name": "Galician",
+            "country": "Galicia",
+            "nativeSpeakers": "2.4M",
+            "origin": "Ibero-Romance"
+        },
+        "translation": "que lingua é esta?"
+    },
+    {
+        "language": {
             "language": "sr",
             "name": "Serbian",
             "country": "Serbia",
@@ -463,14 +483,6 @@
     },
     {
         "language": {
-            "language": "fi",
-            "name": "Finnish",
-            "country": "Finland"
-        },
-        "translation": "mikä kieli Tämä on?"
-    },
-    {
-        "language": {
             "language": "no",
             "name": "Norwegian",
             "country": "Norway"
@@ -508,14 +520,6 @@
             "country": "Ireland"
         },
         "translation": "cén teanga é seo?"
-    },
-    {
-        "language": {
-            "language": "be",
-            "name": "Belarusian",
-            "country": "Belarus"
-        },
-        "translation": "што гэта за мова?"
     },
     {
         "language": {

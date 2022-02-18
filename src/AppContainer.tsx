@@ -1,12 +1,13 @@
 import { Alert, Button, FormGroup, Grid, InputAdornment, Snackbar, TextField, Typography } from "@mui/material"
 import JSConfetti from "js-confetti"
 import moment from "moment"
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import AudioClipPlayer from "./AudioClipPlayer"
 import translationsJson from "./translations.json"
 import { Guess, Language, SimilarityIndex, LanguageWithTranslation } from "./types"
 import { equalIgnoreCase, startsWithIgnoreCase } from "./util/stringUtil"
 import { LanguageList } from "./LanguageList"
+import { LanguageAutoComplete } from "./LanguageAutoComplete"
 
 export const AppContainer = () => {
     const [guesses, setGuesses] = useState<Guess[]>([])
@@ -22,6 +23,12 @@ export const AppContainer = () => {
     const [showNativeSpeakers, setShowNativeSpeakers] = useState(false)
     const [showLanguageOrigin, setShowLanguageOrigin] = useState(false)
     const [showFlag, setShowFlag] = useState(false)
+
+    const endRef = useRef<null | HTMLDivElement>(null)
+
+    const scrollToBottom = () => {
+        endRef.current?.scrollIntoView({ behavior: "smooth" })
+    }
 
     const loadSimilarityData = async (code: string) => {
         return await require(`./lexical-similarity-data-${code}.json`)
@@ -70,6 +77,8 @@ export const AppContainer = () => {
         return <>Loading...</>
     }
 
+    const isMobile = true
+
     const answer = answerWithTranslation.language
     const answerName = answerWithTranslation.language.name
     const sentence = answerWithTranslation.translation
@@ -90,10 +99,12 @@ export const AppContainer = () => {
             setError(`You already guessed ${guess}!`)
             setCurrentGuess('')
         } else if (guessInLower.toLowerCase() === answerName.toLowerCase()) {
-            setGuesses(guesses.concat({
+            let newGuesses = guesses
+            newGuesses.unshift({
                 language: answerWithTranslation.language,
                 rank: 100,
-            }))
+            })
+            setGuesses(newGuesses)
             setSolved(true)
         } else {
             let guessedLanguage = languages.find(l => equalIgnoreCase(l.name, guessInLower))
@@ -103,8 +114,10 @@ export const AppContainer = () => {
                     language: guessedLanguage,
                     rank: similarityData.find(row => row.l1 === answerName && equalIgnoreCase(row.l2, guessInLower))?.value,
                 }
+                let newGuesses = guesses
+                newGuesses.unshift(newGuess)
+                setGuesses(newGuesses)
                 setError(`Guess again!`)
-                setGuesses(guesses.concat(newGuess))
                 setCurrentGuess('')
             } else {
                 setError(`${guess} is not in the list of languages!`)
@@ -184,47 +197,58 @@ export const AppContainer = () => {
                     }
                     <h4>Flag:</h4>
                     {showFlag ? 
-                        <img style={{ marginLeft: 10 }} height={50} src={`https://word-puzzles.s3.us-east-1.amazonaws.com/flags/${answer.country.toLowerCase()}.png`} /> : 
+                        <img alt="flag" style={{ marginLeft: 10 }} height={50} src={`https://word-puzzles.s3.us-east-1.amazonaws.com/flags/${answer.country.toLowerCase()}.png`} /> : 
                         <Button onClick={() => setShowFlag(true)}>Show hint</Button>
                     }
                     <br /><br />
                     {solved ? <h2>{answerName}</h2> : 
-                        <FormGroup>
-                            <TextField 
-                                value={currentGuess} 
-                                onChange={event => setCurrentGuess(event.target.value)} 
-                                autoFocus 
-                                onKeyPress={e => handleKeyPress(e)} 
-                                autoComplete="off"
-                                InputProps={
-                                    {
-                                        endAdornment: (
-                                            <InputAdornment position="end">
-                                                <Button 
-                                                    variant="contained" 
-                                                    onClick={() => handleSubmit(currentGuess)} disabled={currentGuess === ''} 
-                                                    disableElevation
-                                                >Guess</Button>
-                                            </InputAdornment>
-                                        )
-                                    }
-                                }
+                        (isMobile ? 
+                            <LanguageAutoComplete 
+                                options={filteredLanguages} 
+                                // onOpen={() => scrollToBottom()}
+                                onOpen={() => null}
+                                onSubmit={guess => handleSubmit(guess.name)} 
                             />
-                        </FormGroup>
+                            :
+                            <FormGroup>
+                                <TextField 
+                                    value={currentGuess} 
+                                    onChange={event => setCurrentGuess(event.target.value)} 
+                                    autoFocus 
+                                    onKeyPress={e => handleKeyPress(e)} 
+                                    autoComplete="off"
+                                    InputProps={
+                                        {
+                                            endAdornment: (
+                                                <InputAdornment position="end">
+                                                    <Button 
+                                                        variant="contained" 
+                                                        onClick={() => handleSubmit(currentGuess)} disabled={currentGuess === ''} 
+                                                        disableElevation
+                                                    >Guess</Button>
+                                                </InputAdornment>
+                                            )
+                                        }
+                                    }
+                                />
+                            </FormGroup>
+                        )
                     }
                 </Grid>
             }
             {languages &&
                 <Grid item xs={12}>
-                    <LanguageList 
+                    <LanguageList
                         guesses={guesses}
                         filteredLanguages={filteredLanguages}
                         solved={solved}
                         answer={answer}
                         handleClick={handleClick}
+                        isMobile={isMobile}
                     />
                 </Grid>
             }
+            <div ref={endRef} />
         </Grid>
     )
 }
