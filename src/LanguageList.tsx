@@ -40,7 +40,7 @@ export const LanguageList = ({
                     </ListItem>
                 )
             })}
-            {!isMobile && filteredLanguages.map((language, i) => {
+            {/* {!isMobile && filteredLanguages.map((language, i) => {
                 return (
                     <ListItem 
                         key={`language-${i}`} 
@@ -54,7 +54,7 @@ export const LanguageList = ({
                         <ListItemText primary={language.name} secondary={<CountryInfo country={language.country} />} />
                     </ListItem>
                 )
-            })}
+            })} */}
         </List>
     )
 }

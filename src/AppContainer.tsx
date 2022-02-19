@@ -1,13 +1,16 @@
-import { Alert, Button, FormGroup, Grid, InputAdornment, Snackbar, TextField, Typography } from "@mui/material"
+import { Alert, Grid, Snackbar, Typography, useMediaQuery } from "@mui/material"
 import JSConfetti from "js-confetti"
 import moment from "moment"
 import { useEffect, useRef, useState } from "react"
-import AudioClipPlayer from "./AudioClipPlayer"
 import translationsJson from "./translations.json"
 import { Guess, Language, SimilarityIndex, LanguageWithTranslation } from "./types"
 import { equalIgnoreCase, startsWithIgnoreCase } from "./util/stringUtil"
 import { LanguageList } from "./LanguageList"
 import { LanguageAutoComplete } from "./LanguageAutoComplete"
+import AudioPlayer from "./AudioPlayer"
+import { Header } from "./Header"
+import { HintsContainer } from "./HintsContainer"
+import { LanguageDropdown } from "./LanguageDropdown"
 
 export const AppContainer = () => {
     const [guesses, setGuesses] = useState<Guess[]>([])
@@ -20,9 +23,7 @@ export const AppContainer = () => {
     const [similarityData, setSimilarityData] = useState<SimilarityIndex[]>([])
     const [answerWithTranslation, setAnswerWithTranslation] = useState<LanguageWithTranslation>()
 
-    const [showNativeSpeakers, setShowNativeSpeakers] = useState(false)
-    const [showLanguageOrigin, setShowLanguageOrigin] = useState(false)
-    const [showFlag, setShowFlag] = useState(false)
+    const isMobile = useMediaQuery(`(max-width: 760px)`)
 
     const endRef = useRef<null | HTMLDivElement>(null)
 
@@ -77,8 +78,6 @@ export const AppContainer = () => {
         return <>Loading...</>
     }
 
-    const isMobile = true
-
     const answer = answerWithTranslation.language
     const answerName = answerWithTranslation.language.name
     const sentence = answerWithTranslation.translation
@@ -119,6 +118,7 @@ export const AppContainer = () => {
                 setGuesses(newGuesses)
                 setError(`Guess again!`)
                 setCurrentGuess('')
+                scrollToBottom()
             } else {
                 setError(`${guess} is not in the list of languages!`)
                 setCurrentGuess('')
@@ -144,13 +144,6 @@ export const AppContainer = () => {
             alignItems="center" 
             justifyContent="center"
         >
-            <h2>
-                Lingual
-            </h2>
-            <h4>
-                (I'm a backend engineer, in case you couldn't tell)
-            </h4>
-
             <Snackbar
                 anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
                 open={error !== undefined}
@@ -162,12 +155,7 @@ export const AppContainer = () => {
                 </Alert>
             </Snackbar>
 
-            <Grid item xs={6}>
-                <Typography color="textPrimary">
-                    Try to guess the language in the fewest possible guesses! In English the sentence is 
-                </Typography>
-                <h3>What language is this?</h3>
-            </Grid>
+            <Header isMobile={isMobile} />
 
             {sentence &&
                 <Grid item xs={6}>
@@ -176,62 +164,34 @@ export const AppContainer = () => {
                     </Typography>
                     <h2>{sentence}</h2>
                     {audioPlayerShowing ?
-                        <AudioClipPlayer language={answer.code} onError={() => {
+                        <AudioPlayer language={answer.code} onError={() => {
                             setError('Audio unavailable for this language')
-                            setAudioPlayerShowing(false)
+                            setAudioPlayerShowing(false) 
                         }} />
                         :
                         <strong>Audio unavailable</strong>
                     }
-                    {answer.nativeSpeakers && 
-                        <>
-                            <h4>Number of native speakers:</h4>
-                            {showNativeSpeakers ? <h3>{answer.nativeSpeakers}</h3> : <Button onClick={() => setShowNativeSpeakers(true)}>Show hint</Button>}
-                        </>
-                    }
-                    {answer.origin && 
-                        <>
-                            <h4>Language origin:</h4>
-                            {showLanguageOrigin ? <h3>{answer.origin}</h3> : <Button onClick={() => setShowLanguageOrigin(true)}>Show hint</Button>}
-                        </>
-                    }
-                    <h4>Flag:</h4>
-                    {showFlag ? 
-                        <img alt="flag" style={{ marginLeft: 10 }} height={50} src={`https://word-puzzles.s3.us-east-1.amazonaws.com/flags/${answer.country.toLowerCase()}.png`} /> : 
-                        <Button onClick={() => setShowFlag(true)}>Show hint</Button>
-                    }
+                    <HintsContainer 
+                        nativeSpeakers={answer.nativeSpeakers}
+                        origin={answer.origin}
+                        country={answer.country} 
+                        isMobile={isMobile}
+                    />
+
                     <br /><br />
-                    {solved ? <h2>{answerName}</h2> : 
+                    
+                    {solved ? <h1>{answerName}</h1> : 
                         (isMobile ? 
+                            <LanguageDropdown 
+                                options={filteredLanguages} 
+                                onSubmit={guess => handleSubmit(guess)}
+                            />
+                            :
                             <LanguageAutoComplete 
                                 options={filteredLanguages} 
-                                // onOpen={() => scrollToBottom()}
                                 onOpen={() => null}
                                 onSubmit={guess => handleSubmit(guess.name)} 
                             />
-                            :
-                            <FormGroup>
-                                <TextField 
-                                    value={currentGuess} 
-                                    onChange={event => setCurrentGuess(event.target.value)} 
-                                    autoFocus 
-                                    onKeyPress={e => handleKeyPress(e)} 
-                                    autoComplete="off"
-                                    InputProps={
-                                        {
-                                            endAdornment: (
-                                                <InputAdornment position="end">
-                                                    <Button 
-                                                        variant="contained" 
-                                                        onClick={() => handleSubmit(currentGuess)} disabled={currentGuess === ''} 
-                                                        disableElevation
-                                                    >Guess</Button>
-                                                </InputAdornment>
-                                            )
-                                        }
-                                    }
-                                />
-                            </FormGroup>
                         )
                     }
                 </Grid>
