@@ -15,7 +15,7 @@ const AudioPlayer = ({ language, onError }: AudioPlayerProps) => {
 
   useEffect(() => {
     try {
-      setUrl(require(`./audio/${language}.mpga`))
+      setUrl(`https://s3.amazonaws.com/word-puzzles/${language}.mpga`)
     } catch (e) {
       handleError(e)
     }
