@@ -425,6 +425,16 @@
     },
     {
         "language": {
+            "language": "hy",
+            "name": "Armenian",
+            "country": "Armenia",
+            "nativeSpeakers": "6M",
+            "origin": "Indo-European"
+        },
+        "translation": "ինչ լեզու է սա"
+    },
+    {
+        "language": {
             "language": "sr",
             "name": "Serbian",
             "country": "Serbia",
@@ -528,14 +538,6 @@
             "country": "Macedonia"
         },
         "translation": "кој јазик е ова?"
-    },
-    {
-        "language": {
-            "language": "hy",
-            "name": "Armenian",
-            "country": "Armenia"
-        },
-        "translation": "ինչ լեզու է սա"
     },
     {
         "language": {
