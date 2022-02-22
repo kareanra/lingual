@@ -1,0 +1,352 @@
+[
+    {
+        "l1": "Khmer",
+        "l2": "Khmer",
+        "value": 0.0
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Vietnamese",
+        "value": 77.78
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Japanese",
+        "value": 84.58
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Basque",
+        "value": 84.76
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Telugu",
+        "value": 85.31
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Maltese",
+        "value": 86.13
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Igbo",
+        "value": 87.38
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Arabic",
+        "value": 88.29
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Korean",
+        "value": 88.89
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Hindi",
+        "value": 88.96
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Urdu",
+        "value": 88.96
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Tamil",
+        "value": 89.22
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Spanish",
+        "value": 89.26
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Swahili",
+        "value": 89.39
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Punjabi",
+        "value": 89.47
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Zulu",
+        "value": 89.52
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Georgian",
+        "value": 89.61
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Kazakh",
+        "value": 89.81
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Kyrgyz",
+        "value": 89.81
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Uzbek",
+        "value": 89.81
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Irish",
+        "value": 89.82
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Afrikaans",
+        "value": 90.06
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Yiddish",
+        "value": 90.68
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Romanian",
+        "value": 91.15
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Italian",
+        "value": 91.15
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Amharic",
+        "value": 91.21
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Burmese",
+        "value": 91.67
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Thai",
+        "value": 91.67
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Dutch",
+        "value": 91.67
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Somali",
+        "value": 91.77
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Gujarati",
+        "value": 92.94
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Samoan",
+        "value": 92.99
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Lao",
+        "value": 93.21
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Maori",
+        "value": 93.34
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Armenian",
+        "value": 93.52
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Latin",
+        "value": 93.93
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Uyghur",
+        "value": 94.12
+    },
+    {
+        "l1": "Khmer",
+        "l2": "German",
+        "value": 94.24
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Finnish",
+        "value": 94.44
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Turkish",
+        "value": 94.44
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Galician",
+        "value": 94.5
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Catalan",
+        "value": 94.5
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Portuguese",
+        "value": 94.5
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Welsh",
+        "value": 94.55
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Tajik",
+        "value": 94.57
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Mongolian",
+        "value": 94.76
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Javanese",
+        "value": 96.01
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Danish",
+        "value": 96.3
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Swedish",
+        "value": 96.3
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Icelandic",
+        "value": 96.3
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Lithuanian",
+        "value": 96.71
+    },
+    {
+        "l1": "Khmer",
+        "l2": "French",
+        "value": 96.71
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Nepali",
+        "value": 96.72
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Croatian",
+        "value": 97.08
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Serbian",
+        "value": 97.08
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Belarusian",
+        "value": 97.08
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Macedonian",
+        "value": 97.08
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Ukrainian",
+        "value": 97.08
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Russian",
+        "value": 97.08
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Estonian",
+        "value": 97.22
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Pashto",
+        "value": 97.22
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Hungarian",
+        "value": 97.22
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Slovak",
+        "value": 97.81
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Latvian",
+        "value": 97.84
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Polish",
+        "value": 100.0
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Bulgarian",
+        "value": 100.0
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Bengali",
+        "value": 100.0
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Czech",
+        "value": 100.0
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Indonesian",
+        "value": 100.0
+    },
+    {
+        "l1": "Khmer",
+        "l2": "Hebrew",
+        "value": 100.0
+    }
+]

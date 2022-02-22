@@ -445,6 +445,26 @@
     },
     {
         "language": {
+            "language": "km",
+            "name": "Khmer",
+            "country": "Cambodia",
+            "nativeSpeakers": "16M",
+            "origin": "Austroasiatic"
+        },
+        "translation": "តើនេះជាភាសាអ្វី?"
+    },
+    {
+        "language": {
+            "language": "id",
+            "name": "Indonesian",
+            "country": "Indonesia",
+            "nativeSpeakers": "43M",
+            "origin": "Austronesian"
+        },
+        "translation": "bahasa apa ini?"
+    },
+    {
+        "language": {
             "language": "ky",
             "name": "Kyrgyz",
             "country": "Kyrgyzstan"
@@ -594,22 +614,6 @@
             "country": "India"
         },
         "translation": "આ કઈ ભાષા છે?"
-    },
-    {
-        "language": {
-            "language": "id",
-            "name": "Indonesian",
-            "country": "Indonesia"
-        },
-        "translation": "bahasa apa ini?"
-    },
-    {
-        "language": {
-            "language": "km",
-            "name": "Khmer",
-            "country": "Cambodia"
-        },
-        "translation": "តើនេះជាភាសាអ្វី?"
     },
     {
         "language": {
