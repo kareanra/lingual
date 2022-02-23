@@ -1,0 +1,352 @@
+[
+    {
+        "l1": "Mongolian",
+        "l2": "Mongolian",
+        "value": 0.0
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Hungarian",
+        "value": 70.33
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Uyghur",
+        "value": 73.79
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Kazakh",
+        "value": 76.32
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Kyrgyz",
+        "value": 76.32
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Finnish",
+        "value": 77.32
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Nepali",
+        "value": 78.78
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Estonian",
+        "value": 79.03
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Tajik",
+        "value": 80.13
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Romanian",
+        "value": 80.67
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Spanish",
+        "value": 80.67
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Turkish",
+        "value": 80.89
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Hindi",
+        "value": 80.94
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Urdu",
+        "value": 80.94
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Burmese",
+        "value": 81.53
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Uzbek",
+        "value": 81.87
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Somali",
+        "value": 82.6
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Irish",
+        "value": 83.58
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Italian",
+        "value": 84.08
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Latvian",
+        "value": 84.45
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Gujarati",
+        "value": 84.58
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Belarusian",
+        "value": 85.6
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Ukrainian",
+        "value": 85.6
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Polish",
+        "value": 86.23
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Slovak",
+        "value": 86.23
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Galician",
+        "value": 86.23
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Bulgarian",
+        "value": 86.23
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Serbian",
+        "value": 86.23
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "French",
+        "value": 86.23
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Catalan",
+        "value": 86.23
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Portuguese",
+        "value": 86.23
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Czech",
+        "value": 86.23
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Russian",
+        "value": 86.23
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Punjabi",
+        "value": 86.5
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Igbo",
+        "value": 86.74
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Latin",
+        "value": 87.15
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Lithuanian",
+        "value": 87.23
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Maori",
+        "value": 87.23
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Japanese",
+        "value": 87.59
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Amharic",
+        "value": 87.66
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Armenian",
+        "value": 87.73
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Vietnamese",
+        "value": 87.82
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Welsh",
+        "value": 87.96
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Hebrew",
+        "value": 88.21
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Croatian",
+        "value": 88.37
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Maltese",
+        "value": 88.38
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Arabic",
+        "value": 88.38
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Swahili",
+        "value": 88.54
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Pashto",
+        "value": 88.89
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Macedonian",
+        "value": 89.01
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Bengali",
+        "value": 90.14
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Samoan",
+        "value": 90.46
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Korean",
+        "value": 90.64
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Icelandic",
+        "value": 92.0
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Javanese",
+        "value": 92.28
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Zulu",
+        "value": 92.3
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Georgian",
+        "value": 92.68
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "German",
+        "value": 92.9
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Telugu",
+        "value": 93.75
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Yiddish",
+        "value": 93.83
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Danish",
+        "value": 93.83
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Swedish",
+        "value": 93.83
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Basque",
+        "value": 94.19
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Khmer",
+        "value": 94.76
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Thai",
+        "value": 95.14
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Lao",
+        "value": 95.14
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Indonesian",
+        "value": 95.84
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Afrikaans",
+        "value": 97.22
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Dutch",
+        "value": 97.22
+    },
+    {
+        "l1": "Mongolian",
+        "l2": "Tamil",
+        "value": 97.66
+    }
+]

@@ -455,6 +455,15 @@
     },
     {
         "language": {
+            "language": "mn",
+            "name": "Mongolian",
+            "country": "Mongolia",
+            "nativeSpeakers": "3.6M"
+        },
+        "translation": "энэ ямар хэл вэ?"
+    },
+    {
+        "language": {
             "language": "id",
             "name": "Indonesian",
             "country": "Indonesia",
@@ -686,14 +695,6 @@
             "country": "Wales"
         },
         "translation": "pa iaith yw hwn?"
-    },
-    {
-        "language": {
-            "language": "mn",
-            "name": "Mongolian",
-            "country": "Mongolia"
-        },
-        "translation": "энэ ямар хэл вэ?"
     },
     {
         "language": {
