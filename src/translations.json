@@ -464,6 +464,26 @@
     },
     {
         "language": {
+            "language": "uk",
+            "name": "Ukrainian",
+            "country": "Ukraine",
+            "nativeSpeakers": "40M",
+            "origin": "Indo-European"
+        },
+        "translation": "що це за мова?"
+    },
+    {
+        "language": {
+            "language": "hu",
+            "name": "Hungarian",
+            "country": "Hungary",
+            "nativeSpeakers": "13M",
+            "origin": "Uralic"
+        },
+        "translation": "milyen nyelv ez?"
+    },
+    {
+        "language": {
             "language": "id",
             "name": "Indonesian",
             "country": "Indonesia",
@@ -594,14 +614,6 @@
     },
     {
         "language": {
-            "language": "uk",
-            "name": "Ukrainian",
-            "country": "Ukraine"
-        },
-        "translation": "що це за мова?"
-    },
-    {
-        "language": {
             "language": "it",
             "name": "Italian",
             "country": "Italy"
@@ -663,14 +675,6 @@
             "country": "Netherlands"
         },
         "translation": "welke taal is dit?"
-    },
-    {
-        "language": {
-            "language": "hu",
-            "name": "Hungarian",
-            "country": "Hungary"
-        },
-        "translation": "milyen nyelv ez?"
     },
     {
         "language": {

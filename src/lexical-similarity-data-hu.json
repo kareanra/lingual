@@ -1,0 +1,352 @@
+[
+    {
+        "l1": "Hungarian",
+        "l2": "Hungarian",
+        "value": 0.0
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Estonian",
+        "value": 61.95
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Finnish",
+        "value": 62.19
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Tajik",
+        "value": 68.98
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Mongolian",
+        "value": 70.33
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Irish",
+        "value": 75.7
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Hindi",
+        "value": 80.51
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Urdu",
+        "value": 80.51
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Lithuanian",
+        "value": 81.38
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Pashto",
+        "value": 81.78
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Telugu",
+        "value": 81.88
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Somali",
+        "value": 82.16
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Nepali",
+        "value": 82.27
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Basque",
+        "value": 82.49
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Punjabi",
+        "value": 83.29
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Galician",
+        "value": 83.33
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Catalan",
+        "value": 83.33
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "French",
+        "value": 83.95
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Italian",
+        "value": 83.95
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Kazakh",
+        "value": 84.02
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Kyrgyz",
+        "value": 84.02
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Danish",
+        "value": 84.03
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Amharic",
+        "value": 84.34
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Bulgarian",
+        "value": 84.47
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Serbian",
+        "value": 84.47
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Latin",
+        "value": 84.88
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Bengali",
+        "value": 85.04
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Macedonian",
+        "value": 85.2
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Belarusian",
+        "value": 85.83
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Ukrainian",
+        "value": 85.83
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Uyghur",
+        "value": 86.02
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Romanian",
+        "value": 86.05
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Portuguese",
+        "value": 86.11
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Uzbek",
+        "value": 86.11
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Tamil",
+        "value": 86.37
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Japanese",
+        "value": 86.67
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Turkish",
+        "value": 86.8
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Welsh",
+        "value": 87.1
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Croatian",
+        "value": 87.25
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Polish",
+        "value": 87.25
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Slovak",
+        "value": 87.25
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Czech",
+        "value": 87.25
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Russian",
+        "value": 87.25
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "German",
+        "value": 87.44
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Zulu",
+        "value": 87.96
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Icelandic",
+        "value": 88.37
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Gujarati",
+        "value": 88.89
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Hebrew",
+        "value": 88.89
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Spanish",
+        "value": 89.07
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Korean",
+        "value": 89.46
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Latvian",
+        "value": 89.59
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Igbo",
+        "value": 89.62
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Swedish",
+        "value": 89.76
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Burmese",
+        "value": 89.98
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Yiddish",
+        "value": 90.83
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Afrikaans",
+        "value": 91.01
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Armenian",
+        "value": 91.12
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Swahili",
+        "value": 91.67
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Arabic",
+        "value": 91.67
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Dutch",
+        "value": 93.15
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Maltese",
+        "value": 94.44
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Indonesian",
+        "value": 94.77
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Javanese",
+        "value": 95.58
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Georgian",
+        "value": 96.0
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Samoan",
+        "value": 97.22
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Thai",
+        "value": 97.22
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Khmer",
+        "value": 97.22
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Maori",
+        "value": 97.6
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Vietnamese",
+        "value": 98.32
+    },
+    {
+        "l1": "Hungarian",
+        "l2": "Lao",
+        "value": 100.0
+    }
+]
