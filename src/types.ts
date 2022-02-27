@@ -17,7 +17,13 @@ export type SimilarityIndex = {
     value: number
 }
 
-export type LanguageWithTranslation = {
+export type LanguageWithSimilarity = {
+    language: string
+    similarity: number
+}
+
+export type LanguageWithMetadata = {
     language: Language
     translation: string
+    relative?: LanguageWithSimilarity
 }

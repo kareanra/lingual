@@ -313,22 +313,6 @@
     },
     {
         "language": {
-            "language": "zu",
-            "name": "Zulu",
-            "country": "South Africa"
-        },
-        "translation": "yiluphi ulimi lolu?"
-    },
-    {
-        "language": {
-            "language": "tl",
-            "name": "Filipino",
-            "country": "Philippines"
-        },
-        "translation": "anong wika ito?"
-    },
-    {
-        "language": {
             "language": "sv",
             "name": "Swedish",
             "country": "Sweden"
@@ -342,6 +326,14 @@
             "country": "Bulgaria"
         },
         "translation": "На какъв език е това?"
+    },
+    {
+        "language": {
+            "language": "tr",
+            "name": "Turkish",
+            "country": "Turkey"
+        },
+        "translation": "Bu hangi dil?"
     },
     {
         "language": {
@@ -361,14 +353,6 @@
     },
     {
         "language": {
-            "language": "mi",
-            "name": "Maori",
-            "country": "New Zealand"
-        },
-        "translation": "he aha tenei reo?"
-    },
-    {
-        "language": {
             "language": "ur",
             "name": "Urdu",
             "country": "Pakistan"
@@ -382,6 +366,22 @@
             "country": "Thailand"
         },
         "translation": "นี่คือภาษาอะไร?"
+    },
+    {
+        "language": {
+            "language": "ky",
+            "name": "Kyrgyz",
+            "country": "Kyrgyzstan"
+        },
+        "translation": "бул кайсы тил?"
+    },
+    {
+        "language": {
+            "language": "fr",
+            "name": "French",
+            "country": "France"
+        },
+        "translation": "Quelle langue est-ce?"
     },
     {
         "language": {
@@ -484,29 +484,61 @@
     },
     {
         "language": {
-            "language": "id",
-            "name": "Indonesian",
-            "country": "Indonesia",
-            "nativeSpeakers": "43M",
+            "language": "is",
+            "name": "Icelandic",
+            "country": "Iceland",
+            "nativeSpeakers": "314K",
+            "origin": "Germanic"
+        },
+        "translation": "hvaða tungumál er þetta?"
+    },
+    {
+        "language": {
+            "language": "cy",
+            "name": "Welsh",
+            "country": "Wales",
+            "nativeSpeakers": "900K",
+            "origin": "Celtic"
+        },
+        "translation": "pa iaith yw hwn?"
+    },
+    {
+        "language": {
+            "language": "lo",
+            "name": "Lao",
+            "country": "Laos",
+            "nativeSpeakers": "30M",
+            "origin": "Kra-Dai"
+        },
+        "translation": "ນີ້ແມ່ນພາສາຫຍັງ?"
+    },
+    {
+        "language": {
+            "language": "zu",
+            "name": "Zulu",
+            "country": "South Africa",
+            "nativeSpeakers": "12M",
+            "origin": "Bantu"
+        },
+        "translation": "yiluphi ulimi lolu?"
+    },
+    {
+        "language": {
+            "language": "mi",
+            "name": "Maori",
+            "country": "New Zealand",
+            "nativeSpeakers": "50K",
             "origin": "Austronesian"
         },
-        "translation": "bahasa apa ini?"
+        "translation": "he aha tenei reo?"
     },
     {
         "language": {
-            "language": "ky",
-            "name": "Kyrgyz",
-            "country": "Kyrgyzstan"
+            "language": "tl",
+            "name": "Filipino",
+            "country": "Philippines"
         },
-        "translation": "бул кайсы тил?"
-    },
-    {
-        "language": {
-            "language": "fr",
-            "name": "French",
-            "country": "France"
-        },
-        "translation": "Quelle langue est-ce?"
+        "translation": "anong wika ito?"
     },
     {
         "language": {
@@ -550,11 +582,13 @@
     },
     {
         "language": {
-            "language": "tr",
-            "name": "Turkish",
-            "country": "Turkey"
+            "language": "id",
+            "name": "Indonesian",
+            "country": "Indonesia",
+            "nativeSpeakers": "43M",
+            "origin": "Austronesian"
         },
-        "translation": "Bu hangi dil?"
+        "translation": "bahasa apa ini?"
     },
     {
         "language": {
@@ -646,14 +680,6 @@
     },
     {
         "language": {
-            "language": "is",
-            "name": "Icelandic",
-            "country": "Iceland"
-        },
-        "translation": "hvaða tungumál er þetta?"
-    },
-    {
-        "language": {
             "language": "hmn",
             "name": "Hmong",
             "country": "China"
@@ -691,21 +717,5 @@
             "country": "Israel"
         },
         "translation": "איזו שפה זו?"
-    },
-    {
-        "language": {
-            "language": "cy",
-            "name": "Welsh",
-            "country": "Wales"
-        },
-        "translation": "pa iaith yw hwn?"
-    },
-    {
-        "language": {
-            "language": "lo",
-            "name": "Lao",
-            "country": "Laos"
-        },
-        "translation": "ນີ້ແມ່ນພາສາຫຍັງ?"
     }
 ]

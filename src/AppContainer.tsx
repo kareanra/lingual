@@ -3,7 +3,7 @@ import JSConfetti from "js-confetti"
 import moment from "moment"
 import { useEffect, useRef, useState } from "react"
 import translationsJson from "./translations.json"
-import { Guess, Language, SimilarityIndex, LanguageWithTranslation } from "./types"
+import { Guess, Language, SimilarityIndex, LanguageWithMetadata } from "./types"
 import { equalIgnoreCase, startsWithIgnoreCase } from "./util/stringUtil"
 import { LanguageList } from "./LanguageList"
 import { LanguageAutoComplete } from "./LanguageAutoComplete"
@@ -21,7 +21,7 @@ export const AppContainer = () => {
     const [languages, setLanguages] = useState<Language[]>([])
     const [sortedLanguages, setSortedLanguages] = useState<Language[]>([])
     const [similarityData, setSimilarityData] = useState<SimilarityIndex[]>([])
-    const [answerWithTranslation, setAnswerWithTranslation] = useState<LanguageWithTranslation>()
+    const [answerWithTranslation, setAnswerWithTranslation] = useState<LanguageWithMetadata>()
 
     const isMobile = useMediaQuery(`(max-width: 760px)`)
 
@@ -46,7 +46,7 @@ export const AppContainer = () => {
                 origin: str.language.origin,
             }
         })
-        let sorted = [...languages] 
+        let sorted = [...languages]
         sorted.sort((l1, l2) => l1.name.localeCompare(l2.name))
 
         setLanguages(languages)
@@ -57,14 +57,21 @@ export const AppContainer = () => {
 
         const answer = languages[offset]
 
-        setAnswerWithTranslation({
-            language: answer,
-            translation: translationsJson[offset].translation,
-        })
+        loadSimilarityData(answer.code).then(data => {
+            const similarityData: SimilarityIndex[] = data
+            const relative = similarityData && similarityData.length ? {
+                language: similarityData[1].l2,
+                similarity: Math.round(100 - similarityData[1].value),
+            } : undefined
 
-        loadSimilarityData(answer.code).then(data => 
-            setSimilarityData(data)
-        )
+            setSimilarityData(similarityData)
+
+            setAnswerWithTranslation({
+                language: answer,
+                translation: translationsJson[offset].translation,
+                relative: relative,
+            })
+        })
     }, [])
 
     useEffect(() => {
@@ -130,12 +137,6 @@ export const AppContainer = () => {
         handleSubmit(language)
     }
 
-    const handleKeyPress = (e: any) => {
-        if (e.key === 'Enter' && currentGuess !== '') {
-            handleSubmit(currentGuess)
-        }
-    }
-
     return (
         <Grid 
             container 
@@ -175,6 +176,7 @@ export const AppContainer = () => {
                         nativeSpeakers={answer.nativeSpeakers}
                         origin={answer.origin}
                         country={answer.country} 
+                        relative={answerWithTranslation.relative}
                         isMobile={isMobile}
                     />
 
