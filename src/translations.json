@@ -89,6 +89,14 @@
     },
     {
         "language": {
+            "language": "sl",
+            "name": "Slovenian",
+            "country": "Slovenia"
+        },
+        "translation": "kateri jezik je to?"
+    },
+    {
+        "language": {
             "language": "el",
             "name": "Greek",
             "country": "Greece"
@@ -102,14 +110,6 @@
             "country": "Russia"
         },
         "translation": "וועלכע לשון איז דאס?"
-    },
-    {
-        "language": {
-            "language": "da",
-            "name": "Danish",
-            "country": "Denmark"
-        },
-        "translation": "Hvilket sprog er dette?"
     },
     {
         "language": {
@@ -535,18 +535,22 @@
     {
         "language": {
             "language": "tl",
-            "name": "Filipino",
-            "country": "Philippines"
+            "name": "Tagalog",
+            "country": "Philippines",
+            "nativeSpeakers": "45M",
+            "origin": "Austronesian"
         },
         "translation": "anong wika ito?"
     },
     {
         "language": {
-            "language": "sl",
-            "name": "Slovenian",
-            "country": "Slovenia"
+            "language": "da",
+            "name": "Danish",
+            "country": "Denmark",
+            "nativeSpeakers": "6M",
+            "origin": "Germanic"
         },
-        "translation": "kateri jezik je to?"
+        "translation": "Hvilket sprog er dette?"
     },
     {
         "language": {
