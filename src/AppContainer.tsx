@@ -52,8 +52,8 @@ export const AppContainer = () => {
         setLanguages(languages)
         setSortedLanguages(sorted)
 
-        const today = moment().dayOfYear()
-        const offset = today % languages.length
+        const ordinal = moment().dayOfYear() - 46
+        const offset = ordinal % languages.length
 
         const answer = languages[offset]
 
